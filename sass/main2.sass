@@ -1,0 +1,531 @@
+$black: black
+$scarlet: #D00000
+$cream: #FEFDFA
+$gray: #777
+$light-gray: #ddd
+$dark-gray: #313131
+
+$base: $scarlet
+$accent: $cream
+
+$menubar-background-color: $dark-gray
+
+$header-padding: 1.5rem 10%
+$menubar-padding: 0 10%
+$thin-solid-border: 1px solid
+$thin-solid-border-1: 4px solid
+$thin-dotted-border: 1px dotted
+
+$ipad-pro-width: 1112px
+$small-width: 810px
+$small-width-1: 620px
+$small-width-2: 500px
+$iphone-width: 400px
+$tiny-width: 320px
+    
+*
+    margin: 0
+    padding: 0
+
+html
+    margin: 0
+    padding: 0
+    height: 100%
+
+body
+    font-family: "lucida sans", arial, sans-serif
+    height: 80%
+
+#header
+    background-color: $black
+    padding: $header-padding
+    font-family: 'century gothic', arial, sans-serif
+    font-weight: 100
+    letter-spacing: 0.1rem
+
+    h1
+        color: $base
+        font-size: 3rem
+
+        a
+            color: $gray
+            text-decoration: none
+
+            span
+                color: $base
+
+            &:hover
+                color: $base
+
+    h2
+        color: $gray
+        font-size: 1.2rem
+
+#menubar
+    background-color: $menubar-background-color
+    padding: $menubar-padding
+    border-bottom: $thin-solid-border-1 $base
+    position: sticky
+
+    ul
+        li
+            display: inline-block
+            margin: 0 1%
+            margin-top: 0.5rem
+            padding: 0.3rem 2%
+
+            &:first-child
+                margin-left: 0
+
+            &:last-child
+                margin-right: 0
+            
+            a
+                text-align: center
+                color: $cream
+                text-decoration: none
+                padding: 0.5rem
+                font-size: 1.3rem
+            
+                &:hover
+                    color: $base
+            
+            &.selected
+                background-color: $base
+                // border-radius: 0.5rem
+
+                & a:hover
+                    color: $accent
+
+.clear_margin_and_padding
+    margin: 0 !important
+    padding: 0 !important
+
+.center
+    text-align: center !important
+
+.header
+    &_content
+        float: left
+        // border-right: 0.5px solid $light-gray
+        padding: 0 10%
+        padding-top: 1rem
+
+        h1
+            font-size: 2rem
+            text-align: center
+            padding: 1.5rem
+            padding-bottom: 3rem
+            
+        h2
+            font-size: 1.7rem
+            text-align: left
+            padding-bottom: 1rem
+            // color: $base
+
+        h3
+            color: $base
+            font-size: 1.3rem
+
+            .event-date
+                font-style: italic
+                font-size: 1.3rem
+
+        hr
+            margin-bottom: 2rem
+
+        p
+            margin-bottom: 1.5rem
+            font-size: 1.2rem
+
+        ul
+            margin-left: 2rem
+            margin-bottom: 1.5rem
+
+            li
+                font-size: 1.2rem
+
+        a
+            color: $black
+            text-decoration: none
+            border-bottom: 1px dotted $base
+
+            &:hover
+                color: $base
+                border-bottom: 1px solid $base
+
+.body_text
+    display: grid
+    min-height: 96%
+    position: relative
+
+    &_content
+        float: left
+        padding: 0 10%
+        padding-top: 1rem
+
+        h1
+            font-size: 2rem
+            text-align: center
+            padding: 1.5rem
+            padding-bottom: 3rem
+            
+        h2
+            font-size: 1.7rem
+            text-align: left
+            padding-bottom: 1rem
+            // color: $base
+
+        h3
+            color: $base
+            font-size: 1.3rem
+
+            .event-date
+                font-style: italic
+                font-size: 1.3rem
+
+        hr
+            margin-bottom: 2rem
+
+        p
+            margin-bottom: 1.5rem
+            font-size: 1.2rem
+
+        ul
+            margin-left: 2rem
+            margin-bottom: 1.5rem
+
+            li
+                font-size: 1.2rem
+
+        a
+            color: $black
+            text-decoration: none
+            border-bottom: 1px dotted $base
+
+            &:hover
+                color: $base
+                border-bottom: 1px solid $base
+
+        &:nth-child(even)
+            background-color: $light-gray
+
+
+    #competition, #event, #meeting, #long_term, #demo
+        &_news, &_projects
+            padding: 0 10%
+
+            h1
+                text-align: center
+                margin-bottom: 2rem
+                color: $scarlet
+
+            .news, .project
+                &_content
+                    width: 100%
+                    padding-left: 2rem
+                    padding-right: 2rem
+
+                    &:nth-child(2)
+                        border-top: none
+
+                    &:last-child
+                        border-bottom: none
+
+                    &:nth-child(even)
+                        background-color: $light-gray
+
+.news, .project
+    display: grid
+    min-height: 96%
+    position: relative
+
+    &_content
+        float: left
+        // padding: 0 10%
+        padding-top: 1rem
+
+        h1
+            font-size: 2rem
+            text-align: center
+            padding: 1.5rem
+            padding-bottom: 3rem
+            
+        h2
+            font-size: 1.7rem
+            text-align: left
+            padding-bottom: 1rem
+            // color: $base
+
+        h3
+            color: $base
+            font-size: 1.3rem
+
+            .event-date
+                font-style: italic
+                font-size: 1.3rem
+
+        hr
+            margin-bottom: 2rem
+
+        p
+            margin-bottom: 1.5rem
+            font-size: 1.2rem
+
+        ul
+            margin-left: 2rem
+            margin-bottom: 1.5rem
+
+            li
+                font-size: 1.2rem
+
+        a
+            color: $black
+            text-decoration: none
+            border-bottom: 1px dotted $base
+
+            &:hover
+                color: $base
+                border-bottom: 1px solid $base
+
+        &:nth-child(even)
+            // background-color: $light-gray
+            // border-top: 1px dotted black
+            // border-bottom: 1px dotted black
+
+hr
+    &.partial
+        width: 80%
+        margin: 0 auto
+        margin-bottom: 3rem
+        margin-top: 2rem
+
+.resource
+    margin: 1.5rem 0
+    padding: 0 2rem
+
+    h3
+        text-align: center
+    
+    p
+        margin-bottom: 1.5rem
+        
+    &-set
+        display: grid
+        grid-template-columns: 1fr 1fr
+        // grid-gap: 5rem
+
+    &-section
+        h2
+            text-align: center
+
+#officer_roles
+    width: 100%
+    display: grid
+    grid-template-columns: 1fr 1fr 1fr
+
+    .role
+        h3
+            padding-bottom: 0.5rem
+
+        p
+            padding-bottom: 0
+            margin-bottom: 0
+
+            &:last-child
+                margin-bottom: 1.5rem
+        
+.footer
+    // margin-top: 3rem !important
+    width: 100%
+    border-top: $thin-solid-border-1 $base
+    text-align: center
+    background-color: $menubar-background-color
+    color: $accent
+    padding: 1.5rem 0
+    font-size: 1.2rem
+    
+    ul
+        li
+            display: inline-block
+            padding: 0 3rem
+            border-right: 1px solid $accent
+
+            &:last-child
+                border-right: none
+
+            a
+                color: $accent
+                text-decoration: none
+                border-bottom: $thin-dotted-border $base
+
+                &:hover
+                    color: $base
+                    border-bottom: $thin-solid-border $base
+
+@media (max-width: $ipad-pro-width)
+    #menubar
+        ul
+            padding: 0
+            margin: 0
+            display: grid
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr
+            text-align: center
+
+            li
+                margin: 0
+
+    .body_text
+        // grid-template-columns: 70% 30%
+
+        &_sidebar
+            h1
+                font-size: 1.5rem
+                text-align: center
+                padding: 1.5rem
+                padding-bottom: 3rem
+                
+            h2
+                font-size: 1rem
+                text-align: left
+                padding-bottom: 0.5rem
+                
+            p
+                font-size: 0.8rem
+                margin-bottom: 1rem
+
+            .event
+                padding: 0.5rem
+
+                &:nth-child(odd)
+                    // background-color: $scarlet
+                    // color: $cream
+    #officer_roles
+        grid-template-columns: 1fr 1fr
+
+        .role
+            text-align: center
+
+    h1, h2, h3, h4, h5, h6
+        &.center_heading
+            text-align: center
+            margin-top: 1rem
+            margin-bottom: 1rem
+
+@media (max-width: $small-width)
+    #menubar
+        ul
+            padding: 0
+            margin: 0
+            display: grid
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr
+            text-align: center
+
+            li
+                margin: 0
+
+    .body_text
+        grid-template-columns: 100%
+        padding: 0
+
+        &_content
+            padding: 5%
+
+        &_sidebar
+            padding: 1.5rem
+            float: right
+            text-align: left
+            background-color: $light-gray
+            height: 100%
+
+            h1
+                font-size: 2rem
+            
+            h2
+                font-size: 1.5rem
+                text-align: left
+                padding-bottom: 1rem
+
+            p
+                margin-bottom: 2rem
+                font-size: 1.2rem
+
+@media (max-width: $small-width-1)
+    #header
+        h1
+            font-size: 1.7rem
+            text-align: center
+
+        h2
+            font-size: 1rem
+            text-align: center
+
+    #menubar
+        ul
+            display: grid
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr
+            text-align: center
+
+            li
+                a
+                    font-size: 1rem
+
+    .body_text
+        h1
+            font-size: 1.5rem
+
+        h2
+            font-size: 1.2rem
+
+        h3
+            font-size: 1rem
+
+        p
+            font-size: 0.8rem
+
+        ul
+            li
+                font-size: 0.8rem
+
+        &_sidebar
+            text-align: left
+
+            h1
+                font-size: 1.5rem
+                
+            h2
+                font-size: 1.2rem
+                
+            p
+                font-size: 0.8rem
+
+    .resource-set
+        grid-template-columns: 1fr
+
+@media (max-width: $small-width-2)
+    .footer
+        ul
+            display: grid
+            grid-template-columns: 1fr 1fr
+            grid-row-gap: 1rem
+            
+            li
+                border-right: none
+
+    #officer_roles
+        grid-template-columns: 1fr
+        text-align: center
+
+    #menubar
+        ul
+            display: grid
+            grid-template-columns: 1fr 1fr 1fr
+                
+
+@media (max-width: $tiny-width)
+    .footer
+        ul
+            li
+                border-right: none
+                display: block
+                font-size: 0.8rem

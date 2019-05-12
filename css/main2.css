@@ -1,0 +1,493 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+body {
+  font-family: "lucida sans", arial, sans-serif;
+  height: 80%;
+}
+
+#header {
+  background-color: black;
+  padding: 1.5rem 10%;
+  font-family: "century gothic", arial, sans-serif;
+  font-weight: 100;
+  letter-spacing: 0.1rem;
+}
+#header h1 {
+  color: #D00000;
+  font-size: 3rem;
+}
+#header h1 a {
+  color: #777;
+  text-decoration: none;
+}
+#header h1 a span {
+  color: #D00000;
+}
+#header h1 a:hover {
+  color: #D00000;
+}
+#header h2 {
+  color: #777;
+  font-size: 1.2rem;
+}
+
+#menubar {
+  background-color: #313131;
+  padding: 0 10%;
+  border-bottom: 4px solid #D00000;
+  position: sticky;
+}
+#menubar ul li {
+  display: inline-block;
+  margin: 0 1%;
+  margin-top: 0.5rem;
+  padding: 0.3rem 2%;
+}
+#menubar ul li:first-child {
+  margin-left: 0;
+}
+#menubar ul li:last-child {
+  margin-right: 0;
+}
+#menubar ul li a {
+  text-align: center;
+  color: #FEFDFA;
+  text-decoration: none;
+  padding: 0.5rem;
+  font-size: 1.3rem;
+}
+#menubar ul li a:hover {
+  color: #D00000;
+}
+#menubar ul li.selected {
+  background-color: #D00000;
+}
+#menubar ul li.selected a:hover {
+  color: #FEFDFA;
+}
+
+.clear_margin_and_padding {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.center {
+  text-align: center !important;
+}
+
+.header_content {
+  float: left;
+  padding: 0 10%;
+  padding-top: 1rem;
+}
+.header_content h1 {
+  font-size: 2rem;
+  text-align: center;
+  padding: 1.5rem;
+  padding-bottom: 3rem;
+}
+.header_content h2 {
+  font-size: 1.7rem;
+  text-align: left;
+  padding-bottom: 1rem;
+}
+.header_content h3 {
+  color: #D00000;
+  font-size: 1.3rem;
+}
+.header_content h3 .event-date {
+  font-style: italic;
+  font-size: 1.3rem;
+}
+.header_content hr {
+  margin-bottom: 2rem;
+}
+.header_content p {
+  margin-bottom: 1.5rem;
+  font-size: 1.2rem;
+}
+.header_content ul {
+  margin-left: 2rem;
+  margin-bottom: 1.5rem;
+}
+.header_content ul li {
+  font-size: 1.2rem;
+}
+.header_content a {
+  color: black;
+  text-decoration: none;
+  border-bottom: 1px dotted #D00000;
+}
+.header_content a:hover {
+  color: #D00000;
+  border-bottom: 1px solid #D00000;
+}
+
+.body_text {
+  display: grid;
+  min-height: 96%;
+  position: relative;
+}
+.body_text_content {
+  float: left;
+  padding: 0 10%;
+  padding-top: 1rem;
+}
+.body_text_content h1 {
+  font-size: 2rem;
+  text-align: center;
+  padding: 1.5rem;
+  padding-bottom: 3rem;
+}
+.body_text_content h2 {
+  font-size: 1.7rem;
+  text-align: left;
+  padding-bottom: 1rem;
+}
+.body_text_content h3 {
+  color: #D00000;
+  font-size: 1.3rem;
+}
+.body_text_content h3 .event-date {
+  font-style: italic;
+  font-size: 1.3rem;
+}
+.body_text_content hr {
+  margin-bottom: 2rem;
+}
+.body_text_content p {
+  margin-bottom: 1.5rem;
+  font-size: 1.2rem;
+}
+.body_text_content ul {
+  margin-left: 2rem;
+  margin-bottom: 1.5rem;
+}
+.body_text_content ul li {
+  font-size: 1.2rem;
+}
+.body_text_content a {
+  color: black;
+  text-decoration: none;
+  border-bottom: 1px dotted #D00000;
+}
+.body_text_content a:hover {
+  color: #D00000;
+  border-bottom: 1px solid #D00000;
+}
+.body_text_content:nth-child(even) {
+  background-color: #ddd;
+}
+.body_text #competition_news, .body_text #competition_projects, .body_text #event_news, .body_text #event_projects, .body_text #meeting_news, .body_text #meeting_projects, .body_text #long_term_news, .body_text #long_term_projects, .body_text #demo_news, .body_text #demo_projects {
+  padding: 0 10%;
+}
+.body_text #competition_news h1, .body_text #competition_projects h1, .body_text #event_news h1, .body_text #event_projects h1, .body_text #meeting_news h1, .body_text #meeting_projects h1, .body_text #long_term_news h1, .body_text #long_term_projects h1, .body_text #demo_news h1, .body_text #demo_projects h1 {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #D00000;
+}
+.body_text #competition_news .news_content, .body_text #competition_news .project_content, .body_text #competition_projects .news_content, .body_text #competition_projects .project_content, .body_text #event_news .news_content, .body_text #event_news .project_content, .body_text #event_projects .news_content, .body_text #event_projects .project_content, .body_text #meeting_news .news_content, .body_text #meeting_news .project_content, .body_text #meeting_projects .news_content, .body_text #meeting_projects .project_content, .body_text #long_term_news .news_content, .body_text #long_term_news .project_content, .body_text #long_term_projects .news_content, .body_text #long_term_projects .project_content, .body_text #demo_news .news_content, .body_text #demo_news .project_content, .body_text #demo_projects .news_content, .body_text #demo_projects .project_content {
+  width: 100%;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+.body_text #competition_news .news_content:nth-child(2), .body_text #competition_news .project_content:nth-child(2), .body_text #competition_projects .news_content:nth-child(2), .body_text #competition_projects .project_content:nth-child(2), .body_text #event_news .news_content:nth-child(2), .body_text #event_news .project_content:nth-child(2), .body_text #event_projects .news_content:nth-child(2), .body_text #event_projects .project_content:nth-child(2), .body_text #meeting_news .news_content:nth-child(2), .body_text #meeting_news .project_content:nth-child(2), .body_text #meeting_projects .news_content:nth-child(2), .body_text #meeting_projects .project_content:nth-child(2), .body_text #long_term_news .news_content:nth-child(2), .body_text #long_term_news .project_content:nth-child(2), .body_text #long_term_projects .news_content:nth-child(2), .body_text #long_term_projects .project_content:nth-child(2), .body_text #demo_news .news_content:nth-child(2), .body_text #demo_news .project_content:nth-child(2), .body_text #demo_projects .news_content:nth-child(2), .body_text #demo_projects .project_content:nth-child(2) {
+  border-top: none;
+}
+.body_text #competition_news .news_content:last-child, .body_text #competition_news .project_content:last-child, .body_text #competition_projects .news_content:last-child, .body_text #competition_projects .project_content:last-child, .body_text #event_news .news_content:last-child, .body_text #event_news .project_content:last-child, .body_text #event_projects .news_content:last-child, .body_text #event_projects .project_content:last-child, .body_text #meeting_news .news_content:last-child, .body_text #meeting_news .project_content:last-child, .body_text #meeting_projects .news_content:last-child, .body_text #meeting_projects .project_content:last-child, .body_text #long_term_news .news_content:last-child, .body_text #long_term_news .project_content:last-child, .body_text #long_term_projects .news_content:last-child, .body_text #long_term_projects .project_content:last-child, .body_text #demo_news .news_content:last-child, .body_text #demo_news .project_content:last-child, .body_text #demo_projects .news_content:last-child, .body_text #demo_projects .project_content:last-child {
+  border-bottom: none;
+}
+.body_text #competition_news .news_content:nth-child(even), .body_text #competition_news .project_content:nth-child(even), .body_text #competition_projects .news_content:nth-child(even), .body_text #competition_projects .project_content:nth-child(even), .body_text #event_news .news_content:nth-child(even), .body_text #event_news .project_content:nth-child(even), .body_text #event_projects .news_content:nth-child(even), .body_text #event_projects .project_content:nth-child(even), .body_text #meeting_news .news_content:nth-child(even), .body_text #meeting_news .project_content:nth-child(even), .body_text #meeting_projects .news_content:nth-child(even), .body_text #meeting_projects .project_content:nth-child(even), .body_text #long_term_news .news_content:nth-child(even), .body_text #long_term_news .project_content:nth-child(even), .body_text #long_term_projects .news_content:nth-child(even), .body_text #long_term_projects .project_content:nth-child(even), .body_text #demo_news .news_content:nth-child(even), .body_text #demo_news .project_content:nth-child(even), .body_text #demo_projects .news_content:nth-child(even), .body_text #demo_projects .project_content:nth-child(even) {
+  background-color: #ddd;
+}
+
+.news, .project {
+  display: grid;
+  min-height: 96%;
+  position: relative;
+}
+.news_content, .project_content {
+  float: left;
+  padding-top: 1rem;
+}
+.news_content h1, .project_content h1 {
+  font-size: 2rem;
+  text-align: center;
+  padding: 1.5rem;
+  padding-bottom: 3rem;
+}
+.news_content h2, .project_content h2 {
+  font-size: 1.7rem;
+  text-align: left;
+  padding-bottom: 1rem;
+}
+.news_content h3, .project_content h3 {
+  color: #D00000;
+  font-size: 1.3rem;
+}
+.news_content h3 .event-date, .project_content h3 .event-date {
+  font-style: italic;
+  font-size: 1.3rem;
+}
+.news_content hr, .project_content hr {
+  margin-bottom: 2rem;
+}
+.news_content p, .project_content p {
+  margin-bottom: 1.5rem;
+  font-size: 1.2rem;
+}
+.news_content ul, .project_content ul {
+  margin-left: 2rem;
+  margin-bottom: 1.5rem;
+}
+.news_content ul li, .project_content ul li {
+  font-size: 1.2rem;
+}
+.news_content a, .project_content a {
+  color: black;
+  text-decoration: none;
+  border-bottom: 1px dotted #D00000;
+}
+.news_content a:hover, .project_content a:hover {
+  color: #D00000;
+  border-bottom: 1px solid #D00000;
+}
+
+hr.partial {
+  width: 80%;
+  margin: 0 auto;
+  margin-bottom: 3rem;
+  margin-top: 2rem;
+}
+
+.resource {
+  margin: 1.5rem 0;
+  padding: 0 2rem;
+}
+.resource h3 {
+  text-align: center;
+}
+.resource p {
+  margin-bottom: 1.5rem;
+}
+.resource-set {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.resource-section h2 {
+  text-align: center;
+}
+
+#officer_roles {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+#officer_roles .role h3 {
+  padding-bottom: 0.5rem;
+}
+#officer_roles .role p {
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+#officer_roles .role p:last-child {
+  margin-bottom: 1.5rem;
+}
+
+.footer {
+  width: 100%;
+  border-top: 4px solid #D00000;
+  text-align: center;
+  background-color: #313131;
+  color: #FEFDFA;
+  padding: 1.5rem 0;
+  font-size: 1.2rem;
+}
+.footer ul li {
+  display: inline-block;
+  padding: 0 3rem;
+  border-right: 1px solid #FEFDFA;
+}
+.footer ul li:last-child {
+  border-right: none;
+}
+.footer ul li a {
+  color: #FEFDFA;
+  text-decoration: none;
+  border-bottom: 1px dotted #D00000;
+}
+.footer ul li a:hover {
+  color: #D00000;
+  border-bottom: 1px solid #D00000;
+}
+
+@media (max-width: 1112px) {
+  #menubar ul {
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    text-align: center;
+  }
+  #menubar ul li {
+    margin: 0;
+  }
+
+  .body_text_sidebar h1 {
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 1.5rem;
+    padding-bottom: 3rem;
+  }
+  .body_text_sidebar h2 {
+    font-size: 1rem;
+    text-align: left;
+    padding-bottom: 0.5rem;
+  }
+  .body_text_sidebar p {
+    font-size: 0.8rem;
+    margin-bottom: 1rem;
+  }
+  .body_text_sidebar .event {
+    padding: 0.5rem;
+  }
+
+  #officer_roles {
+    grid-template-columns: 1fr 1fr;
+  }
+  #officer_roles .role {
+    text-align: center;
+  }
+
+  h1.center_heading, h2.center_heading, h3.center_heading, h4.center_heading, h5.center_heading, h6.center_heading {
+    text-align: center;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+}
+@media (max-width: 810px) {
+  #menubar ul {
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    text-align: center;
+  }
+  #menubar ul li {
+    margin: 0;
+  }
+
+  .body_text {
+    grid-template-columns: 100%;
+    padding: 0;
+  }
+  .body_text_content {
+    padding: 5%;
+  }
+  .body_text_sidebar {
+    padding: 1.5rem;
+    float: right;
+    text-align: left;
+    background-color: #ddd;
+    height: 100%;
+  }
+  .body_text_sidebar h1 {
+    font-size: 2rem;
+  }
+  .body_text_sidebar h2 {
+    font-size: 1.5rem;
+    text-align: left;
+    padding-bottom: 1rem;
+  }
+  .body_text_sidebar p {
+    margin-bottom: 2rem;
+    font-size: 1.2rem;
+  }
+}
+@media (max-width: 620px) {
+  #header h1 {
+    font-size: 1.7rem;
+    text-align: center;
+  }
+  #header h2 {
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  #menubar ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    text-align: center;
+  }
+  #menubar ul li a {
+    font-size: 1rem;
+  }
+
+  .body_text h1 {
+    font-size: 1.5rem;
+  }
+  .body_text h2 {
+    font-size: 1.2rem;
+  }
+  .body_text h3 {
+    font-size: 1rem;
+  }
+  .body_text p {
+    font-size: 0.8rem;
+  }
+  .body_text ul li {
+    font-size: 0.8rem;
+  }
+  .body_text_sidebar {
+    text-align: left;
+  }
+  .body_text_sidebar h1 {
+    font-size: 1.5rem;
+  }
+  .body_text_sidebar h2 {
+    font-size: 1.2rem;
+  }
+  .body_text_sidebar p {
+    font-size: 0.8rem;
+  }
+
+  .resource-set {
+    grid-template-columns: 1fr;
+  }
+}
+@media (max-width: 500px) {
+  .footer ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-row-gap: 1rem;
+  }
+  .footer ul li {
+    border-right: none;
+  }
+
+  #officer_roles {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  #menubar ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+@media (max-width: 320px) {
+  .footer ul li {
+    border-right: none;
+    display: block;
+    font-size: 0.8rem;
+  }
+}

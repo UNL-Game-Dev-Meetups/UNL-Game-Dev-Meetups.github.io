@@ -1,242 +1,199 @@
-<html lang="en">
+<!DOCTYPE html>
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>UNL Game Development Club</title>
-    <link rel="stylesheet" href="/static/main.css">
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>UNL Game Dev Club</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/main2.css" />
 </head>
 <body>
     <div id="header">
-        <h1><a href="index"><span class="logo_hover">UNL</span> Game <span class="logo_hover">Dev</span> Club</a></h1>
+        <h1><a href="index.html"><span class="logo_hover">UNL</span> Game <span class="logo_hover">Dev</span> Club</a></h1>
         <h2>Let's make a game</h2>
     </div>
-    <div id="navbar">
-        <div class="navbar_link">
-            <a href="index">Home</a>
-        </div>
-        <div class="navbar_link">
-            <a href="projects">Projects</a>
-        </div>
-        <div class="navbar_link">
-            <a href="news">News</a>
-        </div>
-        <div class="navbar_link">
-            <a href="resources">Resources</a>
-        </div>
-        <div class="navbar_link">
-            <a href="contact">Contact</a>
-        </div>
+    <div id="menubar">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="news.html">News</a></li>
+            <li class="selected"><a href="resources.html">Resources</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
     </div>
     <div class="body_text">
-        <div class="header_content">
+        <div class="body_text_content">
             <h1>Helpful Game Development Resources</h1>
-            <p>Many students are often confused on how to get started in game development. Below are some helpful links to get started in using an engine, 3D modeling tools, 2D art tools, open license resources, and more. Everything listed below is free to UNL students for some period of time, such as X years, or free to the public indefinitely.</p><p>Note: There are options to pay for some parts of these resources (like free vs paid assets) but there is absolutely no requirement to do so.</p>
+            <p>Many students are often confused on how to get started in game development. Below are some helpful links to get started in using an engine, 3D modeling tools, 2D art tools, open license resources, and more. Everything listed below is free to UNL students for some period of time, such as X years, or free to the public indefinitely.</p>
+            <p><strong>Note:</strong> There are options to pay for some parts of these resources (like free vs paid assets) but there is absolutely no requirement to do so.</p>
+            <!-- <p>&nbsp;</p> -->
         </div>
         <div class="body_text_content">
-            <hr>
-            
-<div class="resource-section section-margin-top">
-  <h2 id="game-engines">Game Engines</h2>
+            <div class="resource-section">
+                <h2>Game Engines</h2>
+                <p>There are several engines to help start students, often with their own set of documentation or other resources.</p>
+                <div class="resource-set">
+                    <div class="resource">
+                        <h3>Unity 2018</h3>
+                        <p>The Unity game engine is a helpful tool for getting started in both 2D and 3D game development.</p>
+                        <p>Download and install from <a href="https://www.unity3d.com" target="_blank">Unity's website</a>.<br>View their documentation at the <a href="https://docs.unity3d.com/Manual/index.html">Unity Documentation website</a>.</p>
+                    </div>
+                    <div class="resource">
+                        <h3>Unreal Engine 4</h3>
+                        <p>The Unreal game engine is one used professionally in the game industry, but has a significantly steeper learning curve than Unity does.</p>
+                        <p>Download and install from <a href="https://www.unrealengine.com/en-US/what-is-unreal-engine-4" target="_blank">Unreal's website</a>.<br>View their documentation at the <a href="https://docs.unrealengine.com/en-us/">Unreal Documentation website</a>.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="body_text_content">
+            <div class="resource-section">
+                <h2>Art Tools - 2D</h2>
+                <p>2D art tools can be helpful when creating custom sprites, backgrounds, and other assets for 2D scenes and/or games. It can also be helpful for creating textures to use in both 2D and 3D games.</p>
+                <div class="resource-set">
+                    <div class="resource">
+                        <h3>Adobe Creative Cloud (UNL License)</h3>
+                        <p>Adobe's Creative Cloud Suite is free to UNL students for the duration of their time at the university. It can be downloaded from the UNL ITS website using their UNL credentials.</p>
+                        <p>Visit the <a href="https://itprocurement.unl.edu/adobe-creative-cloud-full-suite#cc-help" target="_blank">ITS Help Guide</a> for more information.</p>
+                    </div>
+                    <div class="resource">
+                        <h3>Gimp</h3>
+                        <p>Gimp is an art tool typically used for creating or manipulating 2D images, such as photographs or textures. </p>
+                        <p>Download and install from <a href="https://www.gimp.org/" target="_blank">Gimp's website</a>.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="body_text_content">
+            <div class="resource-section">
+                <h2>Art Tools - 3D</h2>
+                <p>3D art tools can be helpful when creating 3D models of characters, levels, scene objects, and more. They can be used for creation, animation, and texturing of models.</p>
+                <div class="resource-set">
+                    <div class="resource">
+                        <h3>Blender</h3>
+                        <p>Blender is a 3D modeling program used professionally for making 3D models of characters, assets, scenes, and even animating these models.</p>
+                        <p>Download and install from <a href="https://www.blender.org/" target="_blank">Blender's website</a>.</p>
+                    </div>
+                    <div class="resource">
+                        <h3>Houdini</h3>
+                        <p>Houdini is a 3D modeling program used professionally for making 3D models of characters, assets, scenes, and even animating these models.</p>
+                        <p>Download and install from <a href="https://www.sidefx.com/" target="_blank">SideFX's website</a>.</p>
+                    </div>
+                    <div class="resource">
+                        <h3>Autodesk Maya</h3>
+                        <p>Maya is a 3D modeling program used professionally for making 3D models of characters, assets, scenes, and even animating these models.</p>
+                        <p>Download and install from <a href="https://www.autodesk.com/education/free-software/maya" target="_blank">Autodesk's website</a>.</p>
+                    </div>
+                    <div class="resource">
+                        <h3>Google Sketchup</h3>
+                        <p>Sketchup is a 3D modeling program used by hobbyists for making 3D models of characters and scenes. These models and scenes are posted on <a href="https://www.sketchup.com/" target="_blank">Sketchup's website</a> for others to download and use.</p>
+                        <p>Download and install from <a href="https://www.sketchup.com/" target="_blank">Sketchup's website</a>.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="body_text_content">
+            <div class="resource-section">
+                <h2>Audio Tools</h2>
+                <p>These audio tools can help anyone record and manipulate sound for games. This can be applicable for background music, sound effects, voiceovers, and more.</p>
 
-  <p>There are several engines to help start students, often with their own set of documentation or other resources.</p>
+                <div class="resource-set">
+                    <div class="resource">
+                        <h3>Audacity</h3>
+                        <p>Audacity is a tool helpful for recording any audio using a microphone and a computer. It is helpful for recording music, sound effects, or voiceovers.</p>
 
-  <div class="resource-set">
-    <div class="resource">
-      <h3 id="unity">Unity</h3>
-
-      <p>The Unity game engine is a helpful tool for getting started in both 2D and 3D game development.</p>
-
-      <p>Download and install from Unity’s website.
-View their documentation at the Unity Documentation website.</p>
-    </div>
-    <div class="resource">
-      <h3 id="unreal-engine-4">Unreal Engine 4</h3>
-
-      <p>The Unreal game engine is one used professionally in the game industry, but has a significantly steeper learning curve than Unity does.</p>
-
-      <p>Download and install from Unreal’s website.
-View their documentation at the Unreal Documentation website.</p>
-    </div>
-  </div>
-</div>
-
-<div class="resource-section">
-  <h2 id="art-tools---2d">Art Tools - 2D</h2>
-
-  <p>2D art tools can be helpful when creating custom sprites, backgrounds, and other assets for 2D scenes and/or games. It can also be helpful for creating textures to use in both 2D and 3D games.</p>
-
-  <div class="resource-set">
-    <div class="resource">
-      <h3 id="adobe-creative-cloud-unl-license">Adobe Creative Cloud (UNL License)</h3>
-
-      <p>Adobe’s Creative Cloud Suite is free to UNL students for the duration of their time at the university. It can be downloaded from the UNL ITS website using their UNL credentials.</p>
-
-      <p>Visit the ITS Help Guide for more information.</p>
-    </div>
-    <div class="resource">
-      <h3 id="gimp">Gimp</h3>
-
-      <p>Gimp is an art tool typically used for creating or manipulating 2D images, such as photographs or textures.</p>
-
-      <p>Download and install from Gimp’s website.</p>
-    </div>
-  </div>
-</div>
-
-<div class="resource-section">
-  <h2 id="art-tools---3d">Art Tools - 3D</h2>
-
-  <p>3D art tools can be helpful when creating 3D models of characters, levels, scene objects, and more. They can be used for creation, animation, and texturing of models.</p>
-
-  <div class="resource-set">
-    <div class="resource">
-      <h3 id="blender">Blender</h3>
-
-      <p>Blender is a 3D modeling program used professionally for making 3D models of characters, assets, scenes, and even animating these models.</p>
-
-      <p>Download and install from Blender’s website.</p>
-    </div>
-    <div class="resource">
-      <h3 id="houdini">Houdini</h3>
-
-      <p>Houdini is a 3D modeling program used professionally for making 3D models of characters, assets, scenes, and even animating these models.</p>
-
-      <p>Download and install from SideFX’s website.</p>
-    </div>
-    <div class="resource">
-      <h3 id="autodesk-maya">Autodesk Maya</h3>
-
-      <p>Maya is a 3D modeling program used professionally for making 3D models of characters, assets, scenes, and even animating these models.</p>
-
-      <p>Download and install from Autodesk’s website.</p>
-    </div>
-    <div class="resource">
-      <h3 id="google-sketchup">Google Sketchup</h3>
-
-      <p>Sketchup is a 3D modeling program used by hobbyists for making 3D models of characters and scenes. These models and scenes are posted on Sketchup’s website for others to download and use.</p>
-
-      <p>Download and install from Sketchup’s website.</p>
-    </div>
-  </div>
-</div>
-
-<div class="resource-section">
-  <h2 id="audio-tools">Audio Tools</h2>
-
-  <p>These audio tools can help anyone record and manipulate sound for games. This can be applicable for background music, sound effects, voiceovers, and more.</p>
-
-  <div class="resource-set">
-    <div class="resource">
-      <h3 id="audacity">Audacity</h3>
-
-      <p>Audacity is a tool helpful for recording any audio using a microphone and a computer. It is helpful for recording music, sound effects, or voiceovers.</p>
-
-      <p>Download and install from Audacity’s website.</p>
-    </div>
-    <div class="resource">
-      <h3 id="famitracker">FamiTracker</h3>
-
-      <p>FamiTracker is an NES-style music composition program built around emulating older video game sound chips. It is available on Windows.</p>
-
-      <p>Visit FamiTracker’s website for more information.</p>
-    </div>
-  </div>
-</div>
-
-<div class="resource-section">
-  <h2 id="online-resources">Online Resources</h2>
-
-  <p>These online resouces will help discover open-licensed assets such as 2D sprites, 3D models, music, sound effects, and more for any game.</p>
-
-  <div class="resource-set">
-    <div class="resource">
-      <h3 id="audio---freesoundorg">Audio - FreeSound.org</h3>
-
-      <p>FreeSound.org is a website that hosts creative commons- and attribution-licensed music, sound effects, and other audio clips for anyone to use.</p>
-
-      <p>Visit FreeSound.org for more information.</p>
-    </div>
-    <div class="resource">
-      <h3 id="audio---incompetech">Audio - Incompetech</h3>
-
-      <p>Incompetech is a website that hosts royalty-free music, sound effects, and other audio clips for anyone to use.</p>
-
-      <p>Visit Incompetech.com for more information.</p>
-    </div>
-    <div class="resource">
-      <h3 id="art---turbosquidcom">Art - TurboSquid.com</h3>
-
-      <p>Incompetech is a website that hosts royalty-free 3D models for anyone to use.</p>
-
-      <p>Visit TurboSquid.com for more information.</p>
-    </div>
-    <div class="resource">
-      <h3 id="art---3d-warehouse">Art - 3D Warehouse</h3>
-
-      <p>3D Warehouse is the online platform where anyone can host open-licensed art made in Google’s 3D Sketchup.</p>
-
-      <p>Visit Sketchup’s 3D Warehouse website for more information.</p>
-    </div>
-  </div>
-</div>
-
-<div class="resource-section">
-  <h2 id="online-learning-platforms">Online Learning Platforms</h2>
-
-  <p>These online learning platforms provide many classes to help teach students a variety of topics. They are all Massively Open Online Courses (MOOCs) and organized in a manner that helps the individual student learn at their own pace. They also provide ways to connect with the instructor should the student have questions about the content.</p>
-
-  <div class="resource-set">
-    <div class="resource">
-      <h3 id="udemy">Udemy</h3>
-
-      <p>Visit Udemy to learn more about their classes.</p>
-
-      <p>Visit Incompetech.com for more information.</p>
-    </div>
-    <div class="resource">
-      <h3 id="udacity">Udacity</h3>
-
-      <p>Visit Udacity to learn more about their classes.</p>
-    </div>
-    <div class="resource">
-      <h3 id="coursera">Coursera</h3>
-
-      <p>Visit Coursera to learn more about their classes.</p>
-    </div>
-    <div class="resource">
-      <h3 id="code-academy">Code Academy</h3>
-
-      <p>Visit Code Academy to learn more about their classes.</p>
-    </div>
-    <div class="resource">
-      <h3 id="khan-academy">Khan Academy</h3>
-
-      <p>Visit Khan Academy to learn more about their classes.</p>
-    </div>
-    <div class="resource">
-      <h3 id="edx">EdX</h3>
-
-      <p>Visit EdX to learn more about their classes.</p>
-    </div>
-    <div class="resource">
-      <h3 id="youtube">YouTube</h3>
-
-      <p>YouTube has many great videos that people have posted for free to teach a variety of concepts.</p>
-
-      <p>Visit YouTube to learn more.</p>
-    </div>
-  </div>
-</div>
-
+                        <p>Download and install from <a href="https://www.audacityteam.org/">Audacity's website</a>.</p>
+                    </div>
+                    <div class="resource">
+                        <h3>FamiTracker</h3>
+                        <p>FamiTracker is an NES-style music composition program built around emulating older video game sound chips. It is available on Windows.</p>
+                        
+                        <p>Visit <a href="http://www.famitracker.com">FamiTracker's website</a> for more information.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="body_text_content">
+            <div class="resource-section">
+                <h2>Online Resources</h2>
+                <p>These online resouces will help discover open-licensed assets such as 2D sprites, 3D models, music, sound effects, and more for any game.</p>
+                <div class="resource-set">
+                    <div class="resource">
+                        <h3>Audio - FreeSound.org</h3>
+                        <p>FreeSound.org is a website that hosts creative commons- and attribution-licensed music, sound effects, and other audio clips for anyone to use.</p>
+                        <p>Visit <a href="https://freesound.org/" target="_blank">FreeSound.org</a> for more information.</p>
+                    </div>
+                    <div class="resource">
+                        <h3>Audio - Incompetech</h3>
+                        <p>Incompetech is a website that hosts royalty-free music, sound effects, and other audio clips for anyone to use.</p>
+                        <p>Visit <a href="https://incompetech.com/music/royalty-free/music.html" target="_blank">Incompetech.com</a> for more information.</p>
+                    </div>
+                    <div class="resource">
+                        <h3>Art - TurboSquid.com</h3>
+                        <p>Incompetech is a website that hosts royalty-free 3D models for anyone to use.</p>
+                        <p>Visit <a href="https://www.turbosquid.com/" target="_blank">TurboSquid.com</a> for more information.</p>
+                    </div>
+                    <div class="resource">
+                        <h3>Art - 3D Warehouse</h3>
+                        <p>3D Warehouse is the online platform where anyone can host open-licensed art made in Google's 3D Sketchup.</p>
+                        <p>Visit <a href="https://3dwarehouse.sketchup.com/" target="_blank">Sketchup's 3D Warehouse website</a> for more information.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="body_text_content">
+            <div class="resource-section">
+                <h2>Online Learning Platforms</h2>
+                <p>These online learning platforms provide many classes to help teach students a variety of topics. They are all Massively Open Online Courses (MOOCs) and organized in a manner that helps the individual student learn at their own pace. They also provide ways to connect with the instructor should the student have questions about the content.</p>
+                <div class="resource-set">
+                    <div class="resource">
+                        <h3>Udemy</h3>
+                        <p>Visit <a href="https://www.udemy.com" target="_blank">Udemy</a> to learn more about their classes.</p>
+                    </div>
+                    <div class="resource">
+                        <h3>Udacity</h3>
+                        <p>Visit <a href="https://www.udacity.com" target="_blank">Udacity</a> to learn more about their classes.</p>
+                    </div>
+                    <div class="resource">
+                        <h3>Coursera</h3>
+                        <p>Visit <a href="https://www.coursera.com" target="_blank">Coursera</a> to learn more about their classes.</p>
+                    </div>
+                    <div class="resource">
+                        <h3>Code Academy</h3>
+                        <p>Visit <a href="https://www.codeacademy.com" target="_blank">Code Academy</a> to learn more about their classes.</p>
+                    </div>
+                    <div class="resource">
+                        <h3>Khan Academy</h3>
+                        <p>Visit <a href="https://www.udemy.com" target="_blank">Khan Academy</a> to learn more about their classes.</p>
+                    </div>
+                    <div class="resource">
+                        <h3>EdX</h3>
+                        <p>Visit <a href="https://www.udemy.com" target="_blank">EdX</a> to learn more about their classes.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="body_text_content">
+            <div class="resource-section">
+                <h2>Other Online Resources</h2>
+                <div class="resource-set">
+                    <div class="resource">
+                        <h3>YouTube</h3>
+                        <p>Visit <a href="https://www.yotube.com" target="_blank">YouTube</a> to learn more.</p>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
     <div class="footer">
-        <a href="index">Home</a>
-        <a href="projects">Projects</a>
-        <a href="news">News</a>
-        <a href="resources">Resources</a>
-        <a href="contact">Contact</a>
+        <ul>
+            <li class="selected"><a href="index.html">Home</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="news.html">News</a></li>
+            <li><a href="resources.html">Resources</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
     </div>
+
 </body>
 </html>
