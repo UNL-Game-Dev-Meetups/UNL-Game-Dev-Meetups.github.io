@@ -154,7 +154,7 @@ body
                 color: $base
                 border-bottom: 1px solid $base
 
-.body_text
+.body_text, .news, .project
     display: grid
     min-height: 96%
     position: relative
@@ -222,7 +222,6 @@ body
 
             .news, .project
                 &_content
-                    width: 100%
                     padding-left: 2rem
                     padding-right: 2rem
 
@@ -235,63 +234,7 @@ body
                     &:nth-child(even)
                         background-color: $light-gray
 
-.news, .project
-    display: grid
-    min-height: 96%
-    position: relative
 
-    &_content
-        float: left
-        // padding: 0 10%
-        padding-top: 1rem
-
-        h1
-            font-size: 2rem
-            text-align: center
-            padding: 1.5rem
-            padding-bottom: 3rem
-            
-        h2
-            font-size: 1.7rem
-            text-align: left
-            padding-bottom: 1rem
-            // color: $base
-
-        h3
-            color: $base
-            font-size: 1.3rem
-
-            .event-date
-                font-style: italic
-                font-size: 1.3rem
-
-        hr
-            margin-bottom: 2rem
-
-        p
-            margin-bottom: 1.5rem
-            font-size: 1.2rem
-
-        ul
-            margin-left: 2rem
-            margin-bottom: 1.5rem
-
-            li
-                font-size: 1.2rem
-
-        a
-            color: $black
-            text-decoration: none
-            border-bottom: 1px dotted $base
-
-            &:hover
-                color: $base
-                border-bottom: 1px solid $base
-
-        &:nth-child(even)
-            // background-color: $light-gray
-            // border-top: 1px dotted black
-            // border-bottom: 1px dotted black
 
 hr
     &.partial
