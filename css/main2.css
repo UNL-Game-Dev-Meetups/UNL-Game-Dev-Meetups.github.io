@@ -253,6 +253,7 @@ hr.partial {
 }
 
 .footer {
+  margin-top: 2rem;
   width: 100%;
   border-top: 4px solid #D00000;
   text-align: center;
