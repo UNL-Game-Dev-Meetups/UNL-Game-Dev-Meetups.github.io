@@ -310,6 +310,7 @@ hr.partial {
   .body_text_sidebar .event {
     padding: 0.5rem;
   }
+
   #officer_roles {
     grid-template-columns: 1fr 1fr;
   }
@@ -440,5 +441,3 @@ hr.partial {
     font-size: 0.8rem;
   }
 }
-
-/*# sourceMappingURL=main2.css.map */
