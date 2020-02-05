@@ -5,9 +5,54 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>UNL Game Dev Club</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="css/main2.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="css/main2.css"/>
+    <link rel="stylesheet" href="css/discordInvite.css"/>
 </head>
 <body>
+    <!-- Discord Invite Widget initialization -->
+    <script src="js/discordInvite.js"></script>
+    <script>
+        "use strict";
+        let isMiniMode=false;
+        let discordBig = function() {
+            discordInvite.init({
+                inviteCode: 'm948AnZ',
+                title: 'UNL Game Dev Club',
+                intro: 'Join our Discord',
+            });
+            isMiniMode = false;
+        }
+        let discordSmall = function() {
+            discordInvite.init({
+                inviteCode: 'm948AnZ',
+                title: 'UNL Game Dev Club',
+                intro: 'Join our Discord',
+                miniMode: 'true'
+            });
+            isMiniMode = true;
+        }
+        //Make it responsive
+        window.addEventListener('resize', function () {
+            if(window.innerWidth <= 500 && !isMiniMode){
+                document.getElementById("discordInviteBox").innerText="";
+                discordSmall();
+                discordInvite.render();
+            } else if(window.innerWidth > 500 && isMiniMode) {
+                document.getElementById("discordInviteBox").innerText="";
+                discordBig();
+                discordInvite.render();
+            }
+        })
+        //If no resizing is done
+        if (window.innerWidth <= 500) {
+            discordSmall();
+        } else{
+            discordBig();
+        }
+        //Render the widget
+        discordInvite.render();
+    </script>
+    
     <div id="header">
         <h1><a href="index.html"><span class="logo_hover">UNL</span> Game <span class="logo_hover">Dev</span> Club</a></h1>
         <h2>Let's make a game</h2>
@@ -28,7 +73,7 @@
             <p><b>Our mission: To teach students effective professional game design techniques.</b> We accomplish this by working through game development projects in our meetings, such as demos or active projects. We also provide students the opportunity to showcase their skills at game development competitions ("game jams").</p>
             <p>The group is still fairly new and growing, but we will update the website as new exciting projects and events arise.</p>
 
-            <p>If you're interested in joining, please contact the core leadership team via email and we will respond to you with further details.</p>
+            <p>If you're interested in joining, please contact the core leadership team via email or join the Discord and we will respond to you with further details.</p>
 
             <p>&nbsp;</p>
 
@@ -67,6 +112,16 @@
             </div>
 
             <p>&nbsp;</p>
+
+
+            <!-- Discord invite widget insertion -->
+            <div id="discordInviteParent">
+                <div id="discordInviteBox"></div>
+            </div>
+            <p></p>
+
+            <p>&nbsp;</p>
+
             <p>If you have any recommendations for club events, please fill out the club's <a href="https://goo.gl/forms/XT7DejspGjH3iTTH2">recommendation Google form</a>.</p>
             <p>If you have any concerns regarding club proceedings, events, or other club-related matters, please fill out the club's <a href="https://goo.gl/forms/SWRq3bGCw6wJoUm03">concerns Google form</a>.</p>
             <p>For both forms, it is <strong>not required</strong> to provide contact information should you choose to remain anonymous. However, if it requires a follow-up conversation, it is encouraged to provide contact information. This information will be kept confidential and only handled by club officers.</p>
