@@ -175,6 +175,11 @@ body {
 .body_text_content ul li, .news_content ul li, .project_content ul li {
   font-size: 1.2rem;
 }
+.body_text_content, .news_content, .project_content, .image {
+  float:left;
+  padding-bottom:16px;
+  padding-right:32px;
+}
 .body_text_content a, .news_content a, .project_content a {
   color: black;
   text-decoration: none;
